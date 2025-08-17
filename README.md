@@ -1,12 +1,35 @@
-# React + Vite
+# 🍔 Burger Builder App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Burger Builder App is an interactive React web app where users can build their own custom burgers by adding/removing ingredients, see real-time pricing, and checkout with an order summary. The app features a live burger preview with animations, responsive design, and a clean, user-friendly interface.
 
-Currently, two official plugins are available:
+---
+## 📸 Screenshots
+Here’s how the Burger Builder looks in action:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image alt](https://github.com/praveenku99887/burger-builder-app-frontend/blob/51e94c16e55023a83ff1d0bc6ad55dc4b3630b32/homePage%20.png)
 
-## Expanding the ESLint configuration
+##  Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check out the live version of the Burger Builder here:
+
+[Try the Burger Builder App →](https://brrrgrrr-builder.netlify.app/)
+
+---
+
+## 🚀 Features
+- Interactive burger preview with animated ingredient stacking  
+- Ingredient controls with quantity counters  
+- Real-time total price calculation  
+- Order summary modal with itemized + per-layer details  
+- Responsive, modern UI with simple CSS animations  
+- Utility actions: clear burger, remove last layer, or remove specific layer  
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React (Vite)  
+- **Styling:** CSS (responsive + animations)  
+- **State Management:** React Hooks  
+- **Assets:** Transparent PNGs for ingredients  
+
+---
