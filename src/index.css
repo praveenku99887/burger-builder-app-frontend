@@ -1,0 +1,129 @@
+:root{
+  --accent:#ff9800;
+  --accent-dark:#f57c00;
+  --green:#4caf50;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, Arial;
+  background:#fff3e0;
+  margin:0;
+  color:#222;
+}
+
+.app-header{
+  background:var(--accent);
+  color:white;
+  padding:18px;
+  text-align:center;
+}
+
+.main-content{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  align-items:center;
+  padding:18px;
+}
+
+/* Burger area */
+.burger-display{
+  width:90%;
+  max-width:360px;
+  min-height:320px;
+  background:#f5deb3;
+  border:2px solid #333;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:8px;
+  overflow:hidden;
+}
+
+.bun{ width:85%; max-width:260px; display:block; }
+
+.stack{ width:100%; display:flex; flex-direction:column; align-items:center; }
+
+/* Ingredient images */
+.ingredient-img{
+  width:78%;
+  max-width:220px;
+  display:block;
+}
+
+/* simple drop animation */
+.drop{
+  animation: dropIn 360ms cubic-bezier(.2,.9,.3,1) forwards;
+  transform: translateY(-50px);
+  opacity:0;
+}
+@keyframes dropIn{
+  to { transform: translateY(0); opacity:1; }
+}
+
+/* Controls */
+.controls{ width:100%; max-width:760px; }
+.controls-grid{ display:flex; flex-wrap:unset; gap:10px; justify-content:center; }
+.control-card{
+  background: #fff8e1;
+  padding:8px;
+  border-radius:8px;
+  width:160px;
+  border:1px solid rgba(0,0,0,0.06);
+}
+.control-row{ display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.control-title{ font-weight:600; }
+.count-badge{
+  background:var(--accent);
+  color:white;
+  padding:4px 8px;
+  border-radius:12px;
+  font-size:13px;
+}
+
+/* Buttons */
+.btn{
+  padding:8px 10px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  color:white;
+  margin-right:6px;
+}
+.btn.add{ background:var(--accent); }
+.btn.remove{ background:#d32f2f; }
+.btn.clear{ background:#b71c1c; }
+.btn.checkout{ background:var(--green); }
+.btn.gray{ background:#616161; }
+.btn.green{ background:var(--green); }
+
+/* small buttons */
+.small-btn{ margin-left:8px; padding:4px 6px; font-size:13px; border-radius:4px; }
+
+/* footer controls */
+.controls-footer{ margin-top:12px; display:flex; gap:10px; justify-content:center; }
+
+/* Modal */
+.modal{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,0.6);
+  display:flex; align-items:center; justify-content:center;
+  padding:18px;
+}
+.modal-content{
+  background:white; padding:18px; border-radius:10px; width:100%; max-width:740px;
+}
+.summary-grid{ display:flex; gap:20px; flex-wrap:wrap; }
+.summary-list{ list-style:none; padding:0; margin:0; }
+.summary-list li{ padding:6px 0; border-bottom:1px dashed #eee; display:flex; justify-content:space-between; align-items:center; }
+
+/* Responsive */
+@media (max-width:700px){
+  .control-card{ width:48%; }
+  .ingredient-img{ width:86%; }
+}
+@media (max-width:420px){
+  .control-card{ width:100%; }
+}
